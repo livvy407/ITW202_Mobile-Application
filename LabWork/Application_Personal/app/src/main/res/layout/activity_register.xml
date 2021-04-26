@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/l"
+    tools:context=".Register">
+
+  <TextView
+      android:id="@+id/textView1"
+      android:layout_width="290dp"
+      android:layout_height="62dp"
+      android:text="REGISTRATION"
+      android:textSize="38dp"
+      android:textAlignment="center"
+      android:textStyle="bold"
+      android:textColor="@color/yellow"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.495"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.085" />
+
+  <EditText
+      android:id="@+id/editTextTextPersonName3"
+      android:layout_width="247dp"
+      android:layout_height="52dp"
+      android:background="@drawable/custom_input"
+      android:drawableStart="@drawable/account_box_24"
+      android:drawablePadding="10dp"
+      android:ems="10"
+      android:hint="User Name"
+      android:inputType="textPersonName"
+      android:padding="12dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.276" />
+
+  <EditText
+      android:id="@+id/editTextTextPersonName4"
+      android:layout_width="247dp"
+      android:layout_height="52dp"
+      android:background="@drawable/custom_input"
+      android:drawableStart="@drawable/ic_baseline_email_24"
+      android:drawablePadding="10dp"
+      android:ems="10"
+      android:hint="Email"
+      android:inputType="textPersonName"
+      android:padding="12dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.378" />
+
+  <EditText
+      android:id="@+id/editTextTextPersonName5"
+      android:layout_width="247dp"
+      android:layout_height="52dp"
+      android:background="@drawable/custom_input"
+      android:drawableStart="@drawable/ic_baseline_lock_open_24"
+      android:drawablePadding="10dp"
+      android:ems="10"
+      android:hint="Password"
+      android:inputType="textPersonName"
+      android:padding="12dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.478" />
+
+  <EditText
+      android:id="@+id/editTextTextPersonName6"
+      android:layout_width="247dp"
+      android:layout_height="52dp"
+      android:background="@drawable/custom_input"
+      android:drawableStart="@drawable/ic_baseline_lock_open_24"
+      android:drawablePadding="10dp"
+      android:ems="10"
+      android:hint="Confrim Password"
+      android:inputType="textPersonName"
+      android:padding="10dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.584" />
+
+  <Button
+      android:id="@+id/button3"
+      android:layout_width="135dp"
+      android:layout_height="50dp"
+      android:background="@drawable/custom_button"
+      android:text="Register"
+      android:textSize="20dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.765" />
+</androidx.constraintlayout.widget.ConstraintLayout>
