@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "43063258999",
+    "firebase_url": "https://personalapp-f5558-default-rtdb.firebaseio.com",
+    "project_id": "personalapp-f5558",
+    "storage_bucket": "personalapp-f5558.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43063258999:android:6fbc81865d5070a7a9fb72",
+        "android_client_info": {
+          "package_name": "com.example.free_stories"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43063258999-e653klquuuali9lbmq5al4o8c3lkicva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf1bE2JjKCfBz-Lg8fddyCCr3TYGiNgSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43063258999-e653klquuuali9lbmq5al4o8c3lkicva.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
