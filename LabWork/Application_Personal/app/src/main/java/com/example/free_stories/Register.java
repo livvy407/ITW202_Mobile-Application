@@ -94,17 +94,17 @@ public class Register extends AppCompatActivity {
 
     private boolean validateEmail(){
         String val = mEmail.getText().toString().trim();
-        //String checkEmail = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+        String checkEmail = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
         if(val.isEmpty()){
             mEmail.setError("Email is required.");
             mEmail.requestFocus();
             return false;
         }
-//        else if(!val.matches(checkEmail)){
-//            mEmail.setError("Please enter valid Email Address");
-//            mEmail.requestFocus();
-//            return false;
-//        }
+       else if(!val.matches(checkEmail)){
+            mEmail.setError("Please enter valid Email Address");
+            mEmail.requestFocus();
+            return false;
+       }
         return true;
     }
 

@@ -37,7 +37,7 @@
         app:layout_constraintVertical_bias="0.605" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/Email"
         android:layout_width="290dp"
         android:layout_height="60dp"
         android:background="@drawable/custom_input"
@@ -54,7 +54,7 @@
         app:layout_constraintVertical_bias="0.354" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/Password"
         android:layout_width="290dp"
         android:layout_height="60dp"
         android:background="@drawable/custom_input"
@@ -62,7 +62,7 @@
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:padding="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,4 +97,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.841" />
+
+    <ProgressBar
+        android:id="@+id/progressBarr"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        style="?android:attr/progressBarStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.689" />
 </androidx.constraintlayout.widget.ConstraintLayout>
