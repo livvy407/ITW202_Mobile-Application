@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:ignore="Suspicious0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Team 1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            />
+
+        <ImageButton
+            android:id="@+id/decreaseTeam1"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_background"
+            android:layout_centerVertical="true"
+            android:onClick="decrease"
+            android:src="@drawable/minimize_24"
+            tools:ignore="OnClick" />
+
+        <ImageButton
+            android:id="@+id/increaseTeam1"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size1"
+            android:background="@drawable/button_background"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="increase"
+            android:src="@drawable/add_24" />
+
+        <TextView
+            android:id="@+id/score_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:text="Team 2" />
+
+        <ImageButton
+            android:id="@+id/decreaseTeam2"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_background"
+            android:onClick="decrease"
+            android:src="@drawable/minimize_24" />
+
+        <ImageButton
+            android:id="@+id/increaseTeam2"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size1"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/button_background"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="increase"
+            android:src="@drawable/add_24" />
+
+        <TextView
+            android:id="@+id/score_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+</LinearLayout>

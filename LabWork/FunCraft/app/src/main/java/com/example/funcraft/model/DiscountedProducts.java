@@ -2,11 +2,11 @@ package com.example.funcraft.model;
 
 public class DiscountedProducts {
     Integer id;
-    String imageUrl;
+    String imageurl;
 
-    public DiscountedProducts(Integer id, String imageUrl){
+    public DiscountedProducts(Integer id, String imageurl){
         this.id = id;
-        this.imageUrl = imageUrl;
+        this.imageurl = imageurl;
     }
 
     public Integer getId(){
@@ -17,11 +17,12 @@ public class DiscountedProducts {
         this.id = id;
     }
 
-    public String getImageUrl(){
-        return imageUrl;
+    public String getImageurl(){
+        return imageurl;
     }
 
-    public void setImageUrl(String imageUrl){
-        this.imageUrl = imageUrl;
+    public void setImageurl(String imageurl) {
+        this.imageurl = imageurl;
     }
 }
+
