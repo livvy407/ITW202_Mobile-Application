@@ -26,7 +26,7 @@
             android:layout_below="@+id/sportsImage"
         tools:layout_editor_absoluteX="89dp"
         tools:layout_editor_absoluteY="63dp"
-        style="@style/TextAppearance.AppCompat.Headline"/>
+        style="@style/SportsTitle"/>
 
     <TextView
         android:id="@+id/newsTitle"
