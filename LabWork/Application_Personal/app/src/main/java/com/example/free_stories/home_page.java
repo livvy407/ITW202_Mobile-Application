@@ -20,7 +20,6 @@ import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 
 public class home_page extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-    private Button button1;
     private DrawerLayout mDrawerlayout;
     private ActionBarDrawerToggle mToggle;
     NavigationView navigationView;
@@ -34,7 +33,6 @@ public class home_page extends AppCompatActivity implements NavigationView.OnNav
         mDrawerlayout = findViewById(R.id.drawer);
         navigationView = findViewById(R.id.navigation_view);
         toolbar = (androidx.appcompat.widget.Toolbar) findViewById(R.id.dashboardtoolbar);
-//        Toolbar toolbar = findViewById(R.id.toolbar1);
         setSupportActionBar(toolbar);
 
         navigationView.bringToFront();
@@ -44,14 +42,6 @@ public class home_page extends AppCompatActivity implements NavigationView.OnNav
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.setCheckedItem(R.id.navigation_view);
 
-        button1 = (Button)findViewById(R.id.button4);
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent( home_page.this, motivational.class);
-                startActivity(intent);
-            }
-        });
     }
 
     @Override
@@ -86,5 +76,7 @@ public class home_page extends AppCompatActivity implements NavigationView.OnNav
         return super.onOptionsItemSelected(item);
     }
 
-
+    public void motive(View view) {
+        startActivity(new Intent(home_page.this, motivational.class));
+    }
 }
