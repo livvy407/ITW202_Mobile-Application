@@ -2,6 +2,7 @@
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.LoaderManager;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -11,6 +12,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 
  public class MainActivity extends AppCompatActivity {
+     implements LoaderManager.LoaderCallbacks<String>{
+
+     }
+
     public EditText searchInput;
     private TextView title,author;
 
@@ -20,7 +25,7 @@ import android.widget.TextView;
         setContentView(R.layout.activity_main);
         searchInput=findViewById(R.id.bookInput);
         title=findViewById(R.id.tittleText);
-        author=findViewById(R.id.authorText);
+        author= (TextView) findViewById (R.id.authorText);
     }
 
      public void searchBook(View view) {

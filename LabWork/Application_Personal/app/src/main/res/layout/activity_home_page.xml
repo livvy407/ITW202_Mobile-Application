@@ -37,7 +37,7 @@
         android:id="@+id/dashboardtoolbar"
         layout="@layout/toolbar"/>
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView3"
         android:layout_width="172dp"
         android:layout_height="115dp"
@@ -47,7 +47,8 @@
         app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.25"
+        app:shapeAppearanceOverlay="@style/roundimageview"/>
 
   <Button
       android:id="@+id/button4"

@@ -11,6 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Free_stories">
+        <activity android:name=".motive_story4"></activity>
+        <activity android:name=".motive_story3" />
+        <activity android:name=".motive_story2" />
+        <activity android:name=".motive_story1" />
         <activity android:name=".motivational" />
         <activity android:name=".home_page" />
         <activity android:name=".Register" />
